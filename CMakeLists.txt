@@ -2,16 +2,10 @@ cmake_minimum_required(VERSION 2.6)
 
 PROJECT(curvedsalsa)
 
-IF (NOT WIN32)
-#	ADD_DEFINITIONS(-Wall -Wno-missing-braces -g0)
-#	ADD_DEFINITIONS(-D_FILE_OFFSET_BITS=64)
-ENDIF (NOT WIN32)
-
-FILE(GLOB source_files *.cpp *.h *.inl)
+FILE(GLOB source_files *.c *.cpp *.h *.inl)
 
 ADD_EXECUTABLE(curvedsalsa 
 	${source_files}
-	curve25519-donna-1.1/curve25519-donna.c
 )
 
 IF (WIN32)
