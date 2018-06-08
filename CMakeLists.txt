@@ -12,4 +12,4 @@ ADD_EXECUTABLE(curvedsalsa
 
 TARGET_LINK_LIBRARIES(curvedsalsa ${Boost_LIBRARIES})
 
-
+install(TARGETS curvedsalsa DESTINATION bin)
