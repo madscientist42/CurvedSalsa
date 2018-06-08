@@ -3,3 +3,7 @@ curvedsalsa
 tags
 tests
 .ycm_extra_conf.pyc
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
