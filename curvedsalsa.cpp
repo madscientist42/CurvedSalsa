@@ -70,7 +70,7 @@ b64encode ( uint8_t in[32] )
 void
 b64decode ( uint8_t out[32], const std::string in )
 {
-	static const char decoding[] =
+	static const signed char decoding[] =
 	{
 		-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
 		-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
